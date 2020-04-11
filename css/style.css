@@ -1,0 +1,739 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.woff") format("woff");
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2");
+  src: url("../fonts/OpenSans-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Bold.woff") format("woff");
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2");
+  src: url("../fonts/OpenSans-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+html {
+  font-family: "Open-Sans", Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.header, .footer {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background-color: #0a0e34;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  text-align: center;
+}
+
+.header {
+  background-image: url("../images/football_767.jpg");
+}
+
+.header::before, .footer::before {
+  content: "";
+  background-color: #0a0e34;
+  opacity: 0.9;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.header-container, .footer-container {
+  padding-left: 6.2%;
+  padding-right: 6.2%;
+  position: relative;
+  z-index: 2;
+}
+
+.header-logo-text, .footer-logo-text {
+  width: 133px;
+  fill: #ffffff;
+}
+
+.header-logo-text {
+  margin-top: 32px;
+  margin-bottom: 23vh;
+}
+
+.title {
+  font-style: normal;
+  color: #ffffff;
+  font-size: 28px;
+  line-height: 35px;
+  text-align: left;
+  margin-bottom: 15vh;
+}
+
+.title-right-align {
+  display: block;
+  text-align: left;
+  margin-top: 10px;
+  padding-left: 16%;
+}
+
+.download-link {
+  display: block;
+  margin: auto;
+  width: 100%;
+  background-color: #5e42b0;
+  border-radius: 20px;
+
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 8px;
+  line-height: 10px;
+  text-transform: uppercase;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.download-link:first-child {
+  margin-bottom: 15px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.download-icon {
+  height: 24px;
+  fill: #ffffff;
+}
+
+.download-text {
+  display: inline-block;
+  text-align: left;
+  vertical-align: 2px;
+  margin-left: 4px;
+}
+
+.info {
+  position: relative;
+  z-index: 1;
+}
+
+.info-header {
+  font-style: normal;
+  color: #e7e7e7;
+  font-size: 50px;
+  padding-left: 6.2%;
+  padding-right: 6.2%;
+  margin-top: 20px;
+  margin-bottom: 230px;
+}
+
+.info-picture {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 30px;
+  color: #000000;
+}
+
+.info-articles {
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.info-article {
+  display: block;
+  box-sizing: border-box;
+  padding-left: 6.2%;
+  padding-right: 6.2%;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.info-article-connection {
+  padding-top: 80px;
+  background-color: #fafafa;
+}
+
+.info-article-collaboration {
+  background-color: #f5f4f9;
+}
+
+.info-article-growth-light {
+  background-color: #5e42b0;
+}
+
+.info-article-growth-dark {
+  background-color: #090c35;
+}
+
+.info-article-header {
+  font-style: normal;
+  color: #c1c1c1;
+  font-size: 23px;
+  margin-bottom: 22px;
+}
+
+.info-number {
+  display: inline-block;
+  font-size: 13px;
+  color: #000000;
+  vertical-align: 7px;
+}
+
+.info-number::after {
+  content:"";
+  display: block;
+  width: 15px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #5e42b0;
+}
+
+.number-growth::after {
+  background-color: #ffffff;
+}
+
+.number-violet {
+  color: #5e42b0;
+}
+
+.info-article-text {
+  font-weight: 400;
+  font-style: normal;
+  color: #000000;
+  font-size: 15px;
+}
+
+.article-text-growth {
+  color: #ffffff;
+}
+
+.advice-picture-container {
+  position: relative;
+  z-index: 1;
+}
+
+.advice-picture {
+  width: 100%;
+  margin-bottom: 30px;
+  color: #000000;
+}
+
+.advice-article-container {
+  padding-left: 6.2%;
+  padding-right: 6.2%;
+}
+
+.advice-article-header {
+  font-style: normal;
+  color: #e7e7e7;
+  font-size: 28px;
+  margin-bottom: 18px;
+}
+
+.advice-article-text {
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    font-size: 16px;
+    margin-bottom: 70px;
+}
+
+.advice-number {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  margin-left: 6.2%;
+  bottom: 25px;
+  padding: 25px 27px;
+
+  font-weight: 700;
+  font-style: normal;
+  font-size: 13px;
+  color: #ffffff;
+  background-color: #5e42b0;
+}
+
+.advice-number::after {
+  content:"";
+  display: block;
+  width: 15px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #8f7bc8;
+}
+
+.footer {
+  background-image: url("../images/game_767.jpg");
+}
+
+.logo {
+  width: 56px;
+  fill: #ffffff;
+  background-color: #5e42b0;
+  padding: 10px 9px;
+  border-radius: 10px;
+  margin-top: 17vh;
+  margin-bottom: 10vh;
+}
+
+.footer-header {
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.footer-text {
+  font-size: 13px;
+  color: #9b8ec1;
+  text-transform: uppercase;
+  margin-bottom: 13vh;
+}
+
+.footer-download-links {
+    margin-bottom: 13vh;
+}
+
+@media (min-width: 641px) {
+
+  .download-links {
+    display: flex;
+  }
+
+ .download-link {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 34px;
+  }
+
+  .download-link:first-child {
+    margin-bottom: 0;
+  }
+
+  .download-text {
+    font-size: 14px;
+    line-height: 17px;
+    vertical-align: 5px;
+    margin-left: 25px;
+  }
+
+  .info {
+    display: flex;
+  }
+
+  .info-header {
+    font-size: 80px;
+    padding-right: 0;
+  }
+
+  .info-picture {
+    margin-right: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+
+  .info-players {
+    flex-direction: row-reverse;
+  }
+
+  .info-articles-players, .info-articles-athlets {
+    width: 100%;
+  }
+
+  .info-article-connection {
+     background-color: #ffffff;
+  }
+
+  .advice-article-header {
+    font-size: 80px;
+  }
+
+  .advice-article-text {
+    font-size: 24px;
+  }
+
+  .advice-number {
+    font-size: 24px;
+  }
+
+  .advice-number::after {
+    width: 26px;
+    height: 4px;
+  }
+
+  .footer-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .logo {
+    width: 105px;
+    padding: 17px 12px;
+    border-radius: 22px;
+    margin-top: 13vh;
+    margin-bottom: 8vh;
+  }
+
+  .footer-header {
+    font-size: 80px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+
+  .header {
+    background-image: url("../images/football_1280.jpg");
+  }
+
+  .header-container {
+    padding-left: 7.3%;
+    padding-right: 7.3%;
+  }
+
+  .header-logo-text, .footer-logo-text {
+    width: 205px;
+  }
+
+  .header-logo-text {
+    margin-top: 32px;
+    margin-bottom: 15vh;
+  }
+
+  .title {
+    font-size: 64px;
+    line-height: 76px;
+
+    margin-left: 3.9%;
+    margin-right: 3.9%;
+    margin-bottom: 32vh;
+  }
+
+  .title-right-align {
+    padding-left: 11%;
+  }
+
+  .download-link:first-child {
+    margin-right: 30px;
+  }
+
+  .download-icon {
+    height: 42px;
+  }
+
+  .info-header-athlets, .info-article-athlets {
+    padding-left: 40%;
+    padding-right: 3.9%;
+  }
+
+  .info-header-players, .info-article-players {
+    padding-left: 3.9%;
+    padding-right: 40%;
+  }
+
+  .info-picture-athlets {
+    top: 90px;
+    right: 55%;
+  }
+
+  .info-picture-players {
+    top: 50px;
+  }
+
+  .info-header {
+    margin-top: 75px;
+    margin-bottom: 10px;
+  }
+
+  .info-article-header {
+    font-size: 32px;
+  }
+
+  .info-number {
+    font-size: 18px;
+  }
+
+  .info-number::after {
+    width: 19px;
+  }
+
+  .info-article {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  .info-article-text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .advice-picture {
+    margin-bottom: 80px;
+  }
+
+  .advice-article-container {
+    padding-left: 3.9%;
+    padding-right: 3.9%;
+  }
+
+  .advice-article-header {
+    margin-bottom: 20px;
+  }
+
+  .advice-article-text {
+      margin-bottom: 90px;
+  }
+
+  .advice-number {
+    padding: 42px 45px;
+    margin-left: 3.9%;
+    bottom: 50px;
+  }
+
+  .footer {
+    background-image: url("../images/game_1280.jpg");
+  }
+
+  .logo {
+    margin-top: 13vh;
+    margin-bottom: 8vh;
+  }
+
+  .footer-text-container {
+    padding-left: 3.9%;
+    padding-right: 3.9%;
+  }
+
+  .footer-text {
+    font-size: 34px;
+    margin-bottom: 29vh;
+  }
+
+  .footer-download-links {
+    padding-left: 7.3%;
+    padding-right: 7.3%;
+    margin-bottom: 6vh;
+  }
+}
+
+@media (min-width: 961px) {
+
+  .header {
+    background-image: url("../images/football_1920.jpg");
+  }
+
+  .header-container {
+    max-width: 1554px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .header-logo-text, .footer-logo-text {
+    width: 190px;
+  }
+
+  .header-logo-text {
+    margin-top: 45px;
+    margin-bottom: 25vh;
+  }
+
+  .title {
+    font-size: 90px;
+    line-height: 88px;
+    margin-bottom: 23vh;
+  }
+
+  .title-right-align {
+    text-align: right;
+    padding-left: 0;
+  }
+
+  .download-links {
+    justify-content: center;
+  }
+
+  .download-link {
+    width: 308px;
+    margin: 0;
+  }
+
+  .download-link:first-child {
+    margin-right: 50px;
+  }
+
+  .download-icon {
+    height: 50px;
+  }
+
+  .info-header-athlets, .info-article-athlets {
+    padding-left: 45%;
+    padding-right: 10%;
+  }
+
+  .info-header-players, .info-article-players {
+    padding-left: 10%;
+    padding-right: 50%;
+  }
+
+  .info-picture-athlets {
+    top: 40px;
+    right: 55%;
+  }
+
+  .info-picture-players {
+    top: 35px;
+    right: 10%;
+  }
+
+  .info-header {
+    margin-top: 110px;
+    margin-bottom: 40px;
+  }
+
+  .info-article-header {
+    font-size: 36px;
+  }
+
+  .info-number {
+    font-size: 22px;
+  }
+
+  .info-number::after {
+    width: 23px;
+  }
+
+  .info-article {
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+
+  .info-article-text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .advice-article {
+    display: flex;
+  }
+
+  .advice-picture {
+    margin-bottom: 0;
+  }
+
+  .advice-picture-container {
+    flex-basis: 100%;
+    position: relative;
+    z-index: 1;
+  }
+
+  .advice-article-even {
+    flex-direction: row-reverse;
+  }
+
+  .advice-article-container {
+    flex-basis: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .advice-article-header {
+    margin-top: 200px;
+    margin-bottom: 50px;
+    padding-left: 120px;
+    padding-right: 10%;
+  }
+
+  .advice-article-header-even {
+    padding-left: 10%;
+    padding-right: 120px;
+  }
+
+  .advice-article-text {
+    padding-left: 120px;
+    padding-right: 10%;
+    margin-bottom: 0;
+  }
+
+  .advice-article-text-even {
+    padding-left: 10%;
+    padding-right: 120px;
+  }
+
+  .advice-number {
+    margin-left: 0;
+    padding: 59px 62px;
+    bottom: 0;
+    bottom: 55%;
+    left: calc(100% - 75px);
+  }
+
+  .advice-number-even {
+    left: -75px;
+  }
+
+  .footer {
+    background-image: url("../images/game_1920.jpg");
+  }
+
+  .logo {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+
+  .footer-logo-box {
+    display: flex;
+    padding-top: 23vh;
+    margin-bottom: 15vh;
+    justify-content: center;
+  }
+
+  .footer-text-container {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .footer-text {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+
+  .footer-download-links {
+    margin-bottom: 25vh;
+  }
+}
