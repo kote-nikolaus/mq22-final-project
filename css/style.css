@@ -569,7 +569,7 @@ p {
 
   .header-logo-text {
     margin-top: 45px;
-    margin-bottom: 25vh;
+    margin-bottom: 23vh;
   }
 
   .title {
@@ -618,6 +618,10 @@ p {
   .info-picture-players {
     top: 35px;
     right: -10%;
+  }
+
+  .info-players {
+    overflow: hidden;
   }
 
   .info-header {
