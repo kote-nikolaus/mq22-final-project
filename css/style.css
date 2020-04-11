@@ -355,7 +355,7 @@ p {
   }
 
   .info-header {
-    font-size: 80px;
+    font-size: 76px;
     padding-right: 0;
   }
 
@@ -379,7 +379,7 @@ p {
   }
 
   .advice-article-header {
-    font-size: 80px;
+    font-size: 76px;
   }
 
   .advice-article-text {
@@ -409,7 +409,7 @@ p {
   }
 
   .footer-header {
-    font-size: 80px;
+    font-size: 76px;
   }
 }
 
@@ -617,7 +617,7 @@ p {
 
   .info-picture-players {
     top: 35px;
-    right: 10%;
+    right: -10%;
   }
 
   .info-header {
@@ -667,12 +667,14 @@ p {
 
   .advice-article-container {
     flex-basis: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
     padding-left: 0;
     padding-right: 0;
   }
 
   .advice-article-header {
-    margin-top: 200px;
     margin-bottom: 50px;
     padding-left: 120px;
     padding-right: 10%;
@@ -698,7 +700,7 @@ p {
     margin-left: 0;
     padding: 59px 62px;
     bottom: 0;
-    bottom: 55%;
+    bottom: 50%;
     left: calc(100% - 75px);
   }
 
