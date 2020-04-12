@@ -560,8 +560,8 @@ p {
     max-width: 1554px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
   .header-container {
@@ -719,7 +719,7 @@ p {
 
   .footer-container {
     height: 72vh;
-    padding-top: 220px;
+    padding-top: 200px;
   }
 
   .logo {
